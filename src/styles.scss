@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./styles/init-css";
+@import "./styles/colors";
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+//permet d'importer du node module
+@import "~primeflex/primeflex.css";
+//permet d'importer des icones googles fonts
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1em;
+  color: $primaryFontColor;
+  background-color: $bgColor;
+
+  a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 500;
+  }
+  .app-icon{
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 22px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  }
+
+}
